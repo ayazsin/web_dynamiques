@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ma page vide</title>
+  </head>
+  <body>
+    <!-- <fieldset class="fieldset"></fieldset> -->
+    <form method="post" action="monformulaire.php">
+      <fieldset>
+        <legend>Profil</legend>
+        <p>
+          <label for="pseudo">Mon pseudo :</label>
+          <input
+            type="text"
+            name="pseudo"
+            id="pseudo"
+            placeholder="Entre votre pseudo"
+          />
+        </p>
+
+        <p>
+          <label for="pwd">Mon password :</label>
+          <input
+            type="password"
+            name="pwd"
+            id="pwd"
+            placeholder="Entre votre password"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="mail">Mon mail address :</label>
+          <input type="text" name="mail" id="mail" placeholder="mail@xxx.com" />
+        </p>
+
+        <p>
+          <label for="age">Mon age :</label>
+          <input type="number" min="0" max="150" name="age" id="age" />
+        </p>
+
+        <p>
+          <label for="Tel:">Mon numero de telephone :</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="+00 00 00 00 00"
+          />
+        </p>
+        <p>
+          <!-- <label for="msg">Mon message</label> -->
+          <textarea
+            name="msg"
+            id="msg"
+            cols="20"
+            rows="3"
+            placeholder="Entrez votre message"
+          ></textarea>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Information</legend>
+        <p>
+          <label for="doc">Document : </label>
+          <input type="file" name="doc" id="doc" />
+        </p>
+        <p>
+          <label for="homme">Homme</label>
+          <input type="radio" name="genre" value="homme" id="homme" />
+          <label for="femme">Femme</label>
+          <input type="radio" name="genre" value="femme" id="femme" />
+        </p>
+        <p>
+          <label for="pays">Pays :</label>
+          <select name="pays" id="pays">
+            <optgroup label="Europe">
+              <option value="fr" selected="selected">France</option>
+              <option value="ch">Suisse</option>
+              <option value="be">Belgique</option>
+            </optgroup>
+            <optgroup label="Afrique">
+              <option value="mad">Madagascar</option>
+              <option value="tz">Tanzanie</option>
+              <option value="ma">Marocco</option>
+            </optgroup>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Competences</legend>
+        <p>
+          <label for="html">HTML</label>
+          <input type="checkbox" id="html" value="html" name="competences" />
+          <label for="css">CSS</label>
+          <input type="checkbox" id="css" value="css" name="competences" />
+          <label for="js">Javascript</label>
+          <input type="checkbox" id="js" value="js" name="competences" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Aures éléments</legend>
+        <div>
+          <input type="color" name="color" id="color" value="#5c5c5c" />
+        </div>
+        <div>
+          <input type="date" name="dt" id="dt" />
+          <input type="time" name="heure" id="heure" />
+          <input type="datetime-local" name="hloc" id="hloc" />
+        </div>
+        <div>
+          <label for="url">Url :</label>
+          <input type="url" name="url" id="url" />
+        </div>
+        <div>
+          <input type="range" id="vol" name="vol" min="0" max="10" />
+        </div>
+      </fieldset>
+      <p>
+        <input type="submit" value="OK" />
+      </p>
+    </form>
+  </body>
+</html>
